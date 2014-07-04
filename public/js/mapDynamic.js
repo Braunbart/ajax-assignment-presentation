@@ -11,7 +11,7 @@ function init(){
         tierImageSize: [new OpenLayers.Size(256, 256)]
     };
     
-    var zoomify = new OpenLayers.Layer.Zoomify("Zoomify", "http://localhost:8080/img/", 
+    var zoomify = new OpenLayers.Layer.Zoomify("Zoomify", "img/", 
   		new OpenLayers.Size( zoomifyWidth, zoomifyHeight ), zoomifyOptions);
 
 
