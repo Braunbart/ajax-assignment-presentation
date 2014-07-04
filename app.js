@@ -15,6 +15,9 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', function(req, res) {
 	res.render('index', {});	
 });
+app.get('/basics', function(req, res) {
+	res.render('basics');	
+});
 app.get('/map-static', function(req, res) {
     if(req.query.tile !== undefined) {
         var imgRow = parseInt(req.query.tile.split("-")[0], 10);

@@ -1,0 +1,27 @@
+{{> header}}
+{{> navigation}}
+
+<div class="container">
+<h2>Natives Javascript</h2>
+<pre>
+var xhr = new XMLHttpRequest();
+xhr.onload = function() {
+    console.log(this.responseText);
+};
+xhr.open("get", "templates/navigation");
+xhr.send();
+</pre>
+
+<h2>jQuery</h2>
+<pre>
+$.get('templates/navigation', function(data) {
+    console.log(data);
+});
+</pre>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/markHeaderActive.js"></script>
+
+{{> footer}}
