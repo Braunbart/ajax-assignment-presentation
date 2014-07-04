@@ -1,0 +1,16 @@
+{
+  "name": "map-demo",
+  "version": "0.0.0",
+  "description": "Map demo",
+  "author": "Till Schander <hello@tillschander.com>",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "express": "^4.4.0",
+    "hbs": "^2.6.0"
+  },
+  "private": true
+}

@@ -1,0 +1,93 @@
+/* Map Static */
+.map {
+    width: 256px;
+    height: 256px;
+    border: 1px solid black;
+    margin: 10px;
+}
+.map img {
+    width: 100%;
+    height: 100%;
+}
+table {
+    margin: 0 auto;
+}
+td {
+    text-align: center;    
+}
+
+
+/* Map Dynamic */
+.largemap {
+    border: 1px solid #ccc;
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+/* Single Page Application */
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-bottom: 15px;
+}
+h3 {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.input-group {
+    margin-bottom: 20px;
+}
+.panel.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+.panel .btn {
+    margin-top: 15px;
+}
+.player {
+    bottom: 0;
+    margin-right: 20px;
+    overflow: hidden;
+    padding: 5px;
+    position: fixed;
+    right: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+}
+.player .btn {
+    margin-top: 0;
+}
+.pager .btn:nth-child(2) {
+    margin-left: 5px;
+}
+
+
+
+
+.panel {
+    opacity: 0;
+    animation: new-item-animation .2s ease-out forwards;
+}
+.panel:nth-child(1)  { animation-delay: 0 }
+.panel:nth-child(2)  { animation-delay: 0.05s }
+.panel:nth-child(3)  { animation-delay: 0.1s }
+.panel:nth-child(4)  { animation-delay: 0.15s }
+.panel:nth-child(5)  { animation-delay: 0.2s }
+.panel:nth-child(6)  { animation-delay: 0.25s }
+.panel:nth-child(7)  { animation-delay: 0.3s }
+.panel:nth-child(8)  { animation-delay: 0.35s }
+.panel:nth-child(9)  { animation-delay: 0.4s } 
+.panel:nth-child(10)  { animation-delay: 0.45s }
+
+@keyframes new-item-animation {
+    from {
+        opacity: 0;
+        transform: scale(1.15) translateY(-20px);
+    } to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
